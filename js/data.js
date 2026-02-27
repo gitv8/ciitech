@@ -141,6 +141,7 @@ const siteData = {
                 id: 1,
                 title: "Produtos Gráficos",
                 description: "Cartões de visita, folders, banners e muito mais",
+                category: "grafica",
                 image: "images/produtos/adesivos.png",
                 link: "https://shopee.com.br/yourstore",
                 type: "external"
@@ -149,6 +150,7 @@ const siteData = {
                 id: 2,
                 title: "Comunicação Visual",
                 description: "Adesivos, placas, fachadas e sinalização",
+                category: "comunicacao",
                 image: "images/produtos/comunicação-visual-chaveiro.png",
                 link: "https://shopee.com.br/yourstore",
                 type: "external"
@@ -157,6 +159,7 @@ const siteData = {
                 id: 3,
                 title: "Impressão 3D",
                 description: "Peças personalizadas e protótipos",
+                category: "3d",
                 image: "images/produtos/3d-cerebro.png",
                 link: "https://shopee.com.br/yourstore",
                 type: "external"
@@ -167,6 +170,7 @@ const siteData = {
                 id: 1,
                 title: "Design Gráfico",
                 description: "Criação de logos, artes e identidade visual",
+                category: "design",
                 image: "images/servicos/logo.png",
                 link: `https://wa.me/${companyData.phone}`,
                 mensage: "Olá, gostaria de solicitar um orçamento para Design Gráfico.",
@@ -176,6 +180,7 @@ const siteData = {
                 id: 2,
                 title: "Desenvolvimento Web",
                 description: "Sites institucionais e lojas virtuais",
+                category: "web",
                 image: "images/servicos/site.png",
                 link: `https://wa.me/${companyData.phone}`,
                 mensage: "Olá, gostaria de solicitar um orçamento para Desenvolvimento Web.",

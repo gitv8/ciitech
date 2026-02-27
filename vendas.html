@@ -6,8 +6,13 @@
     <title>Vendas - Vision Graphics</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendas.css">
 </head>
 <body>
+    <input type="checkbox" id="toggle">
+    <div class="overlay"></div>
+    <div id="product-item-container"></div>
+
     <header class="header">
         <nav class="navbar container"></nav>
     </header>
@@ -33,15 +38,6 @@
 
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        // Override render functions for vendas page
-        document.addEventListener('DOMContentLoaded', () => {
-            renderNavigation();
-            renderCategories();
-            renderFooter();
-            initializeMobileMenu();
-            handleScrollEffects();
-        });
-    </script>
+    <script src="js/vendas.js"></script>
 </body>
 </html>

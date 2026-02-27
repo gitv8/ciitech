@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+  /* Overlay escuro que cobre tudo */
+  #overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+
+  /* Janela/elemento ativo */
+  #janela {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    z-index: 20;
+    border-radius: 8px;
+  }
+
+  /* Quando ativos */
+  #overlay.ativo, #janela.ativo {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+  <button onclick="abrir()">Abrir janela</button>
+
+  <div id="overlay" onclick="fechar()"></div>
+
+  <div id="janela">
+    <h2>Janela ativa</h2>
+    <p>Tela atrás está bloqueada.</p>
+    <button onclick="fechar()">Fechar</button>
+  </div>
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+
+
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam inventore distinctio vero, illum doloremque autem veniam ipsam adipisci obcaecati cupiditate at non aspernatur deserunt laborum sequi corrupti, repudiandae, possimus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque explicabo aliquid amet odit reiciendis laborum voluptatum, magni possimus eaque veniam cum iste nam excepturi harum dolorem laboriosam perferendis quas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis asperiores tempora qui cumque eligendi aperiam accusantium unde voluptatibus! Est, non molestiae quos ex inventore architecto debitis excepturi beatae eligendi alias!</p>
+
+  <script>
+    function abrir() {
+      document.getElementById('overlay').classList.add('ativo');
+      document.getElementById('janela').classList.add('ativo');
+    }
+
+    function fechar() {
+      document.getElementById('overlay').classList.remove('ativo');
+      document.getElementById('janela').classList.remove('ativo');
+    }
+  </script>
+
+</body>
+</html>
